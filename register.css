@@ -1,0 +1,282 @@
+  @font-face {
+    font-family: 'Genshin Impact';
+    src: url('fonts/Genshin-Impact-Font/zh-cn.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  body {
+        font-family: 'Genshin Impact', sans-serif;
+            background: #2a0e47; 
+            width: 100%;
+            height:100%;
+            overflow: hidden;
+            transition: all;
+  } 
+
+  #remember{
+    color: rgba(255, 255, 255, 0.7);
+  }
+  a{
+    color:#ffb115;
+    text-decoration: none; 
+  }
+  #noAcc{
+    display: flex;
+    justify-content: space-between;
+  }
+  .socials{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 100%;
+    padding: 10px;
+    overflow: visible;
+  }
+  .icons :hover{
+    cursor: pointer;
+    transform: translateY(1px);
+    box-shadow: 0 4px 10px rgba(255, 152, 0, 0.4);
+  }
+  .rememberForget{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+ 
+ header {
+    position:fixed;
+}
+
+.toolbar {
+    
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    margin-inline: 70px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toolbar .user-info {
+    display: flex;
+    align-items: right;
+    gap: 15px;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    flex-direction: row;
+    justify-content: right;
+    margin-left: 1200px;
+}
+
+.toolbar .user-info .login-button {
+    background-color: #ffb115; /* Changed to blue */
+    color: white;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 25px;    
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.toolbar .user-info .login-button:hover {
+    background-color: #ffb115; /* Darker blue on hover */
+    scale: 1.05;
+    transition: all 0.3s;
+}
+
+.toolbar .user-info .register-link {
+    color: #ffb115; /* Changed to blue */
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 25px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.toolbar .user-info .register-link:hover {
+    color: white;
+    background-color: #ffb115; /* Blue background on hover */
+}
+.navbar {
+    background-color: #ff3b93;
+    color: white;
+    padding: 15px;
+    margin-top: 10px;
+    margin-left: 70px;
+    margin-right: 70px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center; /* Center the navbar items */
+    align-items: center;
+    gap: 15px; /* Space between items */
+    /* justify-content: space-around; */
+}
+
+.navbar ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    gap: 15px;
+    justify-content: center;
+}
+
+
+.navbar a {
+    /* background-color: #007BFF; Changed to blue */
+    color: white;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 25px;    
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #ffb115; /* Darker blue on hover */
+    scale: 1.05;
+    transition: all 0.3s;
+    cursor: grab;
+}   
+
+
+.header {
+    background: #e71fd2;
+    padding: 20px;
+    text-align: center;
+}
+.logo-guess {
+color: #fafaf5; 
+}
+.logo {
+font-family: 'Poppins', sans-serif; /* or any modern font you prefer */
+font-size: 3rem;
+font-weight: bold;
+text-decoration: none;
+display: inline-block;
+animation: pulseScale 5s infinite;
+margin-left: 50px;
+}
+
+.logo-who {
+display: inline-block;
+animation: flipY 6s infinite;
+width: min-content;
+}
+
+.logo-who .w {
+color: #ffb115;
+}
+
+.logo-who .h {
+color: #4192c9;
+}
+
+.logo-who .o {
+color: #59dbec;
+}
+
+.logo-who .question {
+color: rgb(247, 37, 133);
+}
+@keyframes flipY {
+0% {
+transform: rotateX(0deg);
+}
+16.67% {
+transform: rotateX(360deg);
+}
+100% {
+transform: rotateX(360deg);
+}}
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#submit{
+    width: 100%;
+  padding: 15px;
+  border-radius: 12px;
+  border: none;
+  background-color: #ff9800;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(255, 152, 0, 0.4);
+}
+
+#submit:hover{
+    background-color: #f57c00;
+    transform: translateY(1px);
+    box-shadow: 0 6px 12px rgba(255, 152, 0, 0.5);
+}
+
+.loginCard {
+       background: rgba(75, 37, 112, 0.9);
+  border-radius: 20px;
+  padding: 40px;
+  width: 350px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), 0 5px 15px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.1) inset;
+  animation: fadeIn 0.6s ease-out;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+    }
+
+.input{
+    width: 100%;
+  padding: 15px 15px 15px 45px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+    .loginCard form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .loginCard input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    .loginCard button {
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .loginCard button:hover {
+        background-color: #0056b3;
+    }

@@ -1,0 +1,336 @@
+/* CSS inside HTML */
+ *{
+  margin : 0;
+  padding : 0;
+  box-sizing : border-box;
+  }
+  @font-face {
+    font-family: 'Genshin Impact';
+    src: url('fonts/Genshin-Impact-Font/zh-cn.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  body {
+        font-family: 'Genshin Impact', sans-serif;
+  }
+
+  #myVideo {
+  position: fixed;
+  right: 0;
+
+  min-width: 100%; 
+  min-height: 100%;
+}
+  header {
+    z-index: 10;
+  
+    position: fixed;
+}
+
+.toolbar {
+    
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    margin-inline: 70px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toolbar .user-info {
+    display: flex;
+    align-items: right;
+    gap: 15px;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    flex-direction: row;
+    justify-content: right;
+    margin-left: 1200px;
+}
+
+.toolbar .user-info .login-button {
+    background-color: #ffb115; /* Changed to blue */
+    color: white;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 25px;    
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.toolbar .user-info .login-button:hover {
+    background-color: #ffb115; /* Darker blue on hover */
+    scale: 1.05;
+    transition: all 0.3s;
+}
+
+.toolbar .user-info .register-link {
+    color: #ffb115; /* Changed to blue */
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 25px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.toolbar .user-info .register-link:hover {
+    color: white;
+    background-color: #ffb115; /* Blue background on hover */
+}
+.navbar {
+    background-color: #ff3b93;
+    color: white;
+    padding: 15px;
+    margin-top: 10px;
+    margin-left: 70px;
+    margin-right: 70px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center; /* Center the navbar items */
+    align-items: center;
+    gap: 15px; /* Space between items */
+    /* justify-content: space-around; */
+}
+
+.navbar ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    gap: 15px;
+    justify-content: center;
+}
+
+
+.navbar a {
+    /* background-color: #007BFF; Changed to blue */
+    color: white;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 25px;    
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #ffb115; /* Darker blue on hover */
+    scale: 1.05;
+    transition: all 0.3s;
+    cursor: grab;
+}   
+
+
+.logo-guess {
+color: #fafaf5; 
+}
+.logo {
+font-family: 'Poppins', sans-serif; /* or any modern font you prefer */
+font-size: 3rem;
+font-weight: bold;
+text-decoration: none;
+display: inline-block;
+animation: pulseScale 5s infinite;
+margin-left: 50px;
+}
+
+.logo-who {
+display: inline-block;
+animation: flipY 6s infinite;
+width: min-content;
+}
+
+.logo-who .w {
+color: #ffb115;
+}
+
+.logo-who .h {
+color: #4192c9;
+}
+
+.logo-who .o {
+color: #59dbec;
+}
+
+.logo-who .question {
+color: #F72585;
+}
+@keyframes flipY {
+0% {
+transform: rotateX(0deg);
+}
+16.67% {
+transform: rotateX(360deg);
+}
+100% {
+transform: rotateX(360deg);
+}}
+
+.nav {
+  display: flex;
+  margin-right: 16px;
+  gap: 10px;
+}
+
+.nav a {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(241, 107, 201, 0.7);
+}
+
+.nav-links a:hover {
+  color: #fefefe;
+} 
+.hamburger{
+  width: 30px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+}
+/*
+.hamburger span {
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+  transition: 0.3s;
+}*/
+/* transition for nav menu */
+.nav-links {
+  display: none;
+  flex-direction: column;
+  background-color: #f1eeef;
+  position: absolute;
+  top: 100%;
+  right: 10px;
+  padding: 1rem;
+  border-radius: 10px;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+}
+
+.nav-links.active {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hamburger animation */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.hamburger span {
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+.hero {
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+color: rgb(245, 245, 242);
+padding: 20px;
+position: relative; /* <-- Important! */
+overflow: hidden;   /* <-- Prevent extra scroll */
+}
+
+.hero::after {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+
+z-index: 1;
+}
+
+.hero-content {
+position: relative; 
+z-index: 2; /* <-- Above the black overlay */
+max-width: 700px;
+}
+
+.background-video {
+position: absolute;
+top: 50%;
+left: 50%;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transform: translate(-50%, -50%);
+z-index: 0;
+}
+
+
+.hero-content h1{
+    font-size: 58px;
+    margin-bottom: 20PX;
+    font-weight: 800;
+    /* text-shadow: black; */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+    color: #2b2b3f;
+  }
+
+.hero-content p{
+font-size: 20px;
+margin-bottom: 0px;
+line-height:1.5;
+color: #2b2b3f;
+font-weight: 700;
+margin-top: -10px;
+text-align: left;
+max-width: 350px;
+margin-left: 0;
+}
+.btn {
+  padding: 15px 40px;
+  background-color:#F72585;
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  border-radius: 5px;
+  border: 3px solid #2b2b3f;
+  transition: background-color 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  animation: pulseScale 5s infinite;
+}
+@keyframes pulseScale {
+  0%, 100% {
+  transform: scale(1);
+  }
+  50% {
+  transform: scale(1.1);
+  }
+  }
+
+.btn:hover {
+  background-color: #ff3815;
+}
+.logo2{
+    color: #411255;
+}

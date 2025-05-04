@@ -1,0 +1,103 @@
+<DOCTYPE! html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>Share with us!</title>
+        <link rel="stylesheet" href="sharewithus.css">
+    </head>
+    <body>
+      <header>
+        <div class="toolbar">
+            <!-- <div class="search-bar">
+                <input type="text" placeholder="Tell your fitness goals...">
+                <button type="submit">Search</button>
+            </div> -->
+            <a href="/" class="logo">
+   <span class="logo-guess">Guess</span>
+   <span class="logo-who">
+     <span class="w">W</span><span class="h">h</span><span class="o">o</span><span class="question">?</span>
+   </span>
+ </a>
+            <div class="user-info">
+                <a href="login.html" class="login-button">Login</a>
+                <a href="register.html" class="login-button">Register</a>
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/tutorial.html">Tutorial</a></li>
+                <li><a href="/about_us.html">About US</a></li>
+                <li><a href="/sharewithus.html">Contact</a></li>
+            </ul>
+    </nav>
+    </header>
+      <h1 id="header">
+    Share your experience!
+    </h1>
+    <article>
+        <form>
+            <h3 class="hdr">Tell us your opinion or suggestions!</h3>
+            <input type="text" id="name" placeholder="Enter your name" required><br>
+            <input type="text" id="email" placeholder="Enter your email" required><br>
+            <textarea id="feedback" rows="5" placeholder="Enter your feedback" required></textarea>
+            <button id="submit">Submit</button>
+
+        </form>
+        <div>
+        <fieldset>
+          <img src="sharing.png" class="stickers">
+            <legend id="legend">Show us your game face—share a pic or vid!</legend>
+            <div  id="map"class="upload-block">
+                <input type="file" accept="image/*" id="imageInput">
+                <br><br>
+                <img id="preview"  alt="Image Preview" style="max-width: 100%; display: none;">
+
+              </div>
+            </div>
+          
+        </fieldset>  
+    </article>
+    <div class="footer">
+    <section class="footerHead">
+        <h4>
+            Quick Links
+        </h4>
+        <h4>
+            Legal Information
+        </h4>
+    </section>
+     <footer class="links" >
+        
+        <ul>
+            <li><a class="link" href="">Home</a></li>
+            <li><a class="link" href="">About Us</a></li>
+            <li><a class="link" href="contactusfinal.html">Share with us</a></li>
+        </ul>
+        <ul>
+            <li><a class="link" href="">Tutorial</a></li>
+            <li><a class="link" href="">Mail us</a></li>
+            <li><a class="link" href="">Frequently Asked Questions (FAQ)</a></li>
+        </ul>
+        </footer>
+        <hr> 
+        <p class="copyright">© 2025 GuessWho| All Rights Reserved |<div style="text-align: center;"><a class="link" href=""> Privacy Policy </a>|<a class="link" href=""> Terms & Conditions </a></div></p>
+        </div>
+        <script>
+          const input = document.getElementById('imageInput');
+          const preview = document.getElementById('preview');
+      
+          input.addEventListener('change', function() {
+            const file = input.files[0];
+            if (file) {
+              const reader = new FileReader();
+              reader.onload = function(e) {
+                preview.src = e.target.result;
+                preview.style.display = 'block';
+              };
+              reader.readAsDataURL(file);
+            }
+          });
+        </script>
+</body>
