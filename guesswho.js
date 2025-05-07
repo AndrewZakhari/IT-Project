@@ -39,7 +39,6 @@ function addPlayerInput() {
 }
 
 function startGame() {
-    
     players = Array.from(document.querySelectorAll('.playerName'))
         .map(input => input.value.trim())
         .filter(name => name !== '');
@@ -52,6 +51,7 @@ function startGame() {
     if (Object.keys(scores).length === 0) {
         players.forEach(player => scores[player] = 0);
     }
+
     document.getElementById('playerForm').style.display = 'none';
     document.getElementById('questionScreen').style.display = 'block';
     startNewRound();
@@ -201,7 +201,6 @@ function displayScores() {
         scoreArea.appendChild(p);
 
         const guessesList = document.createElement('ul');
-        guessesList.classList.add("background: rgba(0,0,0, 0.5);")
         const { guesses: playerGuesses, answers: answerList } = guesses[player];
 
         playerGuesses.forEach((guess, idx) => {
