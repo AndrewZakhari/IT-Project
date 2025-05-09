@@ -23,8 +23,11 @@
 }
   header {
     z-index: 10;
-  
+    width: 100%;
     position: fixed;
+}
+.menu{
+  display:none;
 }
 
 .toolbar {
@@ -45,10 +48,9 @@
     gap: 15px;
     background-color: transparent;
     padding: 0;
-    margin: 0;
     flex-direction: row;
     justify-content: right;
-    margin-left: 1200px;
+
 }
 
 .toolbar .user-info .login-button {
@@ -95,9 +97,10 @@
     align-items: center;
     gap: 15px; /* Space between items */
     /* justify-content: space-around; */
+    
 }
 
-.navbar ul {
+.navLinks {
     display: flex;
     padding: 0;
     margin: 0;
@@ -172,24 +175,8 @@ transform: rotateX(360deg);
 transform: rotateX(360deg);
 }}
 
-.nav {
-  display: flex;
-  margin-right: 16px;
-  gap: 10px;
-}
 
-.nav a {
-  text-decoration: none;
-  font-size: 18px;
-  font-family: 'Comic Sans MS', cursive, sans-serif;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-shadow: 1px 1px 2px rgba(241, 107, 201, 0.7);
-}
 
-.nav-links a:hover {
-  color: #fefefe;
-} 
 .hamburger{
   width: 30px;
   cursor: pointer;
@@ -198,35 +185,6 @@ transform: rotateX(360deg);
   justify-content: space-between;
   height: 20px;
 }
-/*
-.hamburger span {
-  height: 3px;
-  background: white;
-  border-radius: 2px;
-  transition: 0.3s;
-}*/
-/* transition for nav menu */
-.nav-links {
-  display: none;
-  flex-direction: column;
-  background-color: #f1eeef;
-  position: absolute;
-  top: 100%;
-  right: 10px;
-  padding: 1rem;
-  border-radius: 10px;
-  opacity: 0;
-  transform: translateY(-10px);
-  transition: all 0.3s ease;
-}
-
-.nav-links.active {
-  display: flex;
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Hamburger animation */
 .hamburger.active span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
@@ -283,6 +241,7 @@ height: 100%;
 object-fit: cover;
 transform: translate(-50%, -50%);
 z-index: 0;
+background-color: rgba(0, 0, 0, 0.5);
 }
 
 
@@ -292,7 +251,7 @@ z-index: 0;
     font-weight: 800;
     /* text-shadow: black; */
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
-    color: #2b2b3f;
+    color: white;
   }
 
 .hero-content p{
@@ -333,4 +292,37 @@ margin-left: 0;
 }
 .logo2{
     color: #411255;
+}
+@media only screen and ( max-width: 600px) {
+  .menu{
+    display:block;
+  }
+  header{
+    margin-top: 10px;
+  }
+  .navbar{
+    margin: 0;
+    margin-top: 2.5vh;
+    justify-content: space-around;
+    width: max-content;
+  } 
+  .hidden{
+    display:none;
+  } 
+  .navLinks a {
+    padding-inline: 0;;
+  }
+  .logo{
+    left: 0;
+    position: absolute;
+    margin: 0;
+    font-size: 2rem;
+  }
+  .user-info{
+    margin-left: 0;
+    position: absolute;
+    right: 0;
+    font-size: 0.rem;
+  }
+
 }
