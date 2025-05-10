@@ -1,5 +1,3 @@
-/* CSS Reset */
-/* Simple CSS */
 @font-face {
     font-family: 'Genshin Impact';
     src: url('fonts/Genshin-Impact-Font/zh-cn.ttf') format('truetype');
@@ -21,18 +19,7 @@ body {
 }
 
 
-  .header {
-    background-color: #4c99af;
-    color: #a210ff;
-    padding: 15px;
-    text-align: center;
-    margin-top: 50px;
-    border-radius: 15px;
-    opacity: 0.7;
-}
-
-.toolbar {
-    
+.toolbar {    
     color: white;
     padding: 10px;
     margin-top: 10px;
@@ -56,7 +43,7 @@ body {
 }
 
 .toolbar .user-info .login-button {
-    background-color: #ffb115; /* Changed to blue */
+    background-color: #ffb115; 
     color: white;
     padding: 8px 18px;
     border: none;
@@ -68,13 +55,13 @@ body {
 }
 
 .toolbar .user-info .login-button:hover {
-    background-color: #ffb115; /* Darker blue on hover */
+    background-color: #ffb115; 
     scale: 1.05;
     transition: all 0.3s;
 }
 
 .toolbar .user-info .register-link {
-    color: #ffb115; /* Changed to blue */
+    color: #ffb115; 
     text-decoration: none;
     font-weight: 600;
     padding: 8px 12px;
@@ -84,7 +71,7 @@ body {
 
 .toolbar .user-info .register-link:hover {
     color: white;
-    background-color: #ffb115; /* Blue background on hover */
+    background-color: #ffb115; 
 }
 .navbar {
     background-color: #ff3b93;
@@ -95,15 +82,13 @@ body {
     margin-right: 70px;
     border-radius: 15px;
     display: flex;
-    justify-content: center; /* Center the navbar items */
+    justify-content: center; 
     align-items: center;
-    gap: 15px; /* Space between items */
-    /* justify-content: space-around; */
+    gap: 15px; 
 }
 
 
 .navbar a {
-    /* background-color: #007BFF; Changed to blue */
     color: white;
     padding: 8px 18px;
     border: none;
@@ -115,23 +100,17 @@ body {
 }
 
 .navbar a:hover {
-    background-color: #ffb115; /* Darker blue on hover */
+    background-color: #ffb115; 
     scale: 1.05;
     transition: all 0.3s;
     cursor: grab;
 }   
 
-
-.header {
-    background: #e71fd2;
-    padding: 20px;
-    text-align: center;
-}
 .logo-guess {
 color: #fafaf5; 
 }
 .logo {
-font-family: 'Poppins', sans-serif; /* or any modern font you prefer */
+font-family: sans-serif; 
 font-size: 3rem;
 font-weight: bold;
 text-decoration: none;
@@ -171,50 +150,6 @@ transform: rotateX(360deg);
 100% {
 transform: rotateX(360deg);
 }}
-.navbar {
-    background-color: #ff3b93;
-    color: white;
-    padding: 15px;
-    margin-top: 10px;
-    margin-left: 70px;
-    margin-right: 70px;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center; /* Center the navbar items */
-    align-items: center;
-    gap: 15px; /* Space between items */
-    /* justify-content: space-around; */
-}
-
-
-
-.navbar a {
-    /* background-color: #007BFF; Changed to blue */
-    color: white;
-    padding: 8px 18px;
-    border: none;
-    border-radius: 25px;    
-    cursor: pointer;
-    text-decoration: none;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
-}
-
-.navbar a:hover {
-    background-color: #ffb115; /* Darker blue on hover */
-    scale: 1.05;
-    transition: all 0.3s;
-    cursor: grab;
-}   
-
-
-.header {
-    background: #e71fd2;
-    padding: 20px;
-    text-align: center;
-}
-
-/* --------------------------------------------------------------------------- */
 
 .intro h1 {
 
@@ -246,17 +181,17 @@ transform: rotateX(360deg);
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin-right: 50px; /* Adds space between text and image */ 
+    margin-right: 50px; 
     margin-bottom: 20px;
     width: 100%;
     height: auto;
-    border-radius: 15px; /* Adds rounded corners to the image */
+    border-radius: 15px; 
 }
 
 .team-image img {
-    width: 50%; /* Makes the image responsive */
+    width: 50%; 
     height: auto;
-    border-radius: 15px; /* Adds rounded corners to the image */
+    border-radius: 15px; 
 }
 
 .team-info {
@@ -288,15 +223,15 @@ transform: rotateX(360deg);
 }
 
 .score-image img {
-    float: right; /* Aligns image to the left */
+    float: right; 
     margin-right: -100px;
-    margin-left: 50px; /* Adds space between text and image */ 
+    margin-left: 50px; 
     margin-bottom: 100px;
     margin-top: s0px;
-    width: 75%; /* Makes the image responsive */
+    width: 75%; 
     max-width: 75%;
     height: auto;
-    border-radius: 15px; /* Adds rounded corners to the image */
+    border-radius: 15px; 
 }
 
 .footer {
@@ -312,76 +247,6 @@ transform: rotateX(360deg);
   display:none;
 }
 
-.toolbar {
-    
-    color: white;
-    padding: 10px;
-    margin-top: 10px;
-    margin-inline: 70px;
-    border-radius: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.toolbar .user-info {
-    display: flex;
-    align-items: right;
-    gap: 15px;
-    background-color: transparent;
-    padding: 0;
-    flex-direction: row;
-    justify-content: right;
-
-}
-
-.toolbar .user-info .login-button {
-    background-color: #ffb115; /* Changed to blue */
-    color: white;
-    padding: 8px 18px;
-    border: none;
-    border-radius: 25px;    
-    cursor: pointer;
-    text-decoration: none;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
-}
-
-.toolbar .user-info .login-button:hover {
-    background-color: #ffb115; /* Darker blue on hover */
-    scale: 1.05;
-    transition: all 0.3s;
-}
-
-.toolbar .user-info .register-link {
-    color: #ffb115; /* Changed to blue */
-    text-decoration: none;
-    font-weight: 600;
-    padding: 8px 12px;
-    border-radius: 25px;
-    transition: color 0.3s ease, background-color 0.3s ease;
-}
-
-.toolbar .user-info .register-link:hover {
-    color: white;
-    background-color: #ffb115; /* Blue background on hover */
-}
-.navbar {
-    background-color: #ff3b93;
-    color: white;
-    padding: 15px;
-    margin-top: 10px;
-    margin-left: 70px;
-    margin-right: 70px;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center; /* Center the navbar items */
-    align-items: center;
-    gap: 15px; /* Space between items */
-    /* justify-content: space-around; */
-    
-}
-
 .navLinks {
     display: flex;
     padding: 0;
@@ -390,74 +255,6 @@ transform: rotateX(360deg);
     gap: 15px;
     justify-content: center;
 }
-
-
-.navbar a {
-    /* background-color: #007BFF; Changed to blue */
-    color: white;
-    padding: 8px 18px;
-    border: none;
-    border-radius: 25px;    
-    cursor: pointer;
-    text-decoration: none;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
-}
-
-.navbar a:hover {
-    background-color: #ffb115; /* Darker blue on hover */
-    scale: 1.05;
-    transition: all 0.3s;
-    cursor: grab;
-}   
-
-
-.logo-guess {
-color: #fafaf5; 
-}
-.logo {
-font-family: 'Poppins', sans-serif; /* or any modern font you prefer */
-font-size: 3rem;
-font-weight: bold;
-text-decoration: none;
-display: inline-block;
-animation: pulseScale 5s infinite;
-margin-left: 50px;
-}
-
-.logo-who {
-display: inline-block;
-animation: flipY 6s infinite;
-width: min-content;
-}
-
-.logo-who .w {
-color: #ffb115;
-}
-
-.logo-who .h {
-color: #4192c9;
-}
-
-.logo-who .o {
-color: #59dbec;
-}
-
-.logo-who .question {
-color: #F72585;
-}
-@keyframes flipY {
-0% {
-transform: rotateX(0deg);
-}
-16.67% {
-transform: rotateX(360deg);
-}
-100% {
-transform: rotateX(360deg);
-}}
-
-
 
 .hamburger{
   width: 30px;

@@ -1,4 +1,4 @@
-/* CSS inside HTML */
+
  *{
   margin : 0;
   padding : 0;
@@ -17,7 +17,6 @@
   #myVideo {
   position: fixed;
   right: 0;
-
   min-width: 100%; 
   min-height: 100%;
 }
@@ -54,7 +53,7 @@
 }
 
 .toolbar .user-info .login-button {
-    background-color: #ffb115; /* Changed to blue */
+    background-color: #ffb115; 
     color: white;
     padding: 8px 18px;
     border: none;
@@ -66,13 +65,13 @@
 }
 
 .toolbar .user-info .login-button:hover {
-    background-color: #ffb115; /* Darker blue on hover */
+    background-color: #ffb115; 
     scale: 1.05;
     transition: all 0.3s;
 }
 
 .toolbar .user-info .register-link {
-    color: #ffb115; /* Changed to blue */
+    color: #ffb115; 
     text-decoration: none;
     font-weight: 600;
     padding: 8px 12px;
@@ -82,7 +81,7 @@
 
 .toolbar .user-info .register-link:hover {
     color: white;
-    background-color: #ffb115; /* Blue background on hover */
+    background-color: #ffb115; 
 }
 .navbar {
     background-color: #ff3b93;
@@ -93,11 +92,9 @@
     margin-right: 70px;
     border-radius: 15px;
     display: flex;
-    justify-content: center; /* Center the navbar items */
+    justify-content: center; 
     align-items: center;
-    gap: 15px; /* Space between items */
-    /* justify-content: space-around; */
-    
+    gap: 15px;  
 }
 
 .navLinks {
@@ -111,7 +108,6 @@
 
 
 .navbar a {
-    /* background-color: #007BFF; Changed to blue */
     color: white;
     padding: 8px 18px;
     border: none;
@@ -123,7 +119,7 @@
 }
 
 .navbar a:hover {
-    background-color: #ffb115; /* Darker blue on hover */
+    background-color: #ffb115; 
     scale: 1.05;
     transition: all 0.3s;
     cursor: grab;
@@ -134,7 +130,7 @@
 color: #fafaf5; 
 }
 .logo {
-font-family: 'Poppins', sans-serif; /* or any modern font you prefer */
+font-family: 'Poppins', sans-serif; 
 font-size: 3rem;
 font-weight: bold;
 text-decoration: none;
@@ -211,8 +207,8 @@ align-items: center;
 text-align: center;
 color: rgb(245, 245, 242);
 padding: 20px;
-position: relative; /* <-- Important! */
-overflow: hidden;   /* <-- Prevent extra scroll */
+position: relative; 
+overflow: hidden;   
 }
 
 .hero::after {
@@ -228,7 +224,7 @@ z-index: 1;
 
 .hero-content {
 position: relative; 
-z-index: 2; /* <-- Above the black overlay */
+z-index: 2; 
 max-width: 700px;
 }
 
@@ -249,7 +245,6 @@ background-color: rgba(0, 0, 0, 0.5);
     font-size: 58px;
     margin-bottom: 20PX;
     font-weight: 800;
-    /* text-shadow: black; */
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
     color: white;
   }

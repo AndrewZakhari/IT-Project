@@ -1,5 +1,4 @@
-/* CSS Reset */
-/* Simple CSS */
+
 @font-face {
     font-family: 'Genshin Impact';
     src: url('fonts/Genshin-Impact-Font/zh-cn.ttf') format('truetype');
@@ -39,7 +38,7 @@
 }
 
 .toolbar .user-info .login-button {
-    background-color: #ffb115; /* Changed to blue */
+    background-color: #ffb115; 
     color: white;
     padding: 8px 18px;
     border: none;
@@ -51,13 +50,13 @@
 }
 
 .toolbar .user-info .login-button:hover {
-    background-color: #ffb115; /* Darker blue on hover */
+    background-color: #ffb115; 
     scale: 1.05;
     transition: all 0.3s;
 }
 
 .toolbar .user-info .register-link {
-    color: #ffb115; /* Changed to blue */
+    color: #ffb115; 
     text-decoration: none;
     font-weight: 600;
     padding: 8px 12px;
@@ -67,7 +66,7 @@
 
 .toolbar .user-info .register-link:hover {
     color: white;
-    background-color: #ffb115; /* Blue background on hover */
+    background-color: #ffb115; 
 }
 .navbar {
     background-color: #ff3b93;
@@ -78,11 +77,9 @@
     margin-right: 70px;
     border-radius: 15px;
     display: flex;
-    justify-content: center; /* Center the navbar items */
+    justify-content: center; 
     align-items: center;
-    gap: 15px; /* Space between items */
-    /* justify-content: space-around; */
-    
+    gap: 15px; 
 }
 
 body {
@@ -95,184 +92,7 @@ body {
     background: #2a0e47;          
 }
 
-.header {
-    background-color: #4c99af;
-    color: #a210ff;
-    padding: 15px;
-    text-align: center;
-    margin-top: 50px;
-    border-radius: 15px;
-}
 
-.toolbar {
-    
-    color: white;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.toolbar .user-info {
-    display: flex;
-    align-items: right;
-    gap: 15px;
-    background-color: transparent;
-    padding: 0;
-    margin: 0;
-    flex-direction: row;
-    justify-content: right;
-    margin-left: 1200px;
-}
-
-.toolbar .user-info .login-button {
-    background-color: #ffb115; /* Changed to blue */
-    color: white;
-    padding: 8px 18px;
-    border: none;
-    border-radius: 25px;    
-    cursor: pointer;
-    text-decoration: none;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
-}
-
-.toolbar .user-info .login-button:hover {
-    background-color: #ffb115; /* Darker blue on hover */
-    scale: 1.05;
-    transition: all 0.3s;
-}
-
-.toolbar .user-info .register-link {
-    color: #ffb115; /* Changed to blue */
-    text-decoration: none;
-    font-weight: 600;
-    padding: 8px 12px;
-    border-radius: 25px;
-    transition: color 0.3s ease, background-color 0.3s ease;
-}
-
-.toolbar .user-info .register-link:hover {
-    color: white;
-    background-color: #ffb115; /* Blue background on hover */
-}
-
-/* .toolbar .user-info:hover {
-    background-color: #45a049;
-
-} */
-
-/* .toolbar .search-bar {
-    width: 200px;
-    padding: 5px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    
-}
-
-.toolbar .search-bar input[type="text"] {
-    flex-grow: 1;
-    border: none;
-    outline: none;
-    padding: 5px;
-    border-radius: 5px 0 0 5px;
-    background-color: #888888;
-}
-
-.toolbar .search-bar button {
-    background-color: #ffb115;
-    color: white;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-}
-
-.toolbar .search-bar button:hover {
-    background-color: #58a9ff; 
-}*/
-  .header {
-    background-color: #4c99af;
-    color: #a210ff;
-    padding: 15px;
-    text-align: center;
-    margin-top: 50px;
-    border-radius: 15px;
-    opacity: 0.7;
-}
-
-.toolbar {
-    
-    color: white;
-    padding: 10px;
-    margin-top: 10px;
-    margin-inline: 70px;
-    border-radius: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.toolbar .user-info {
-    display: flex;
-    align-items: right;
-    gap: 15px;
-    background-color: transparent;
-    padding: 0;
-    margin: 0;
-    flex-direction: row;
-    justify-content: right;
-    margin-left: 1200px;
-}
-
-.toolbar .user-info .login-button {
-    background-color: #ffb115; /* Changed to blue */
-    color: white;
-    padding: 8px 18px;
-    border: none;
-    border-radius: 25px;    
-    cursor: pointer;
-    text-decoration: none;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
-}
-
-.toolbar .user-info .login-button:hover {
-    background-color: #ffb115; /* Darker blue on hover */
-    scale: 1.05;
-    transition: all 0.3s;
-}
-
-.toolbar .user-info .register-link {
-    color: #ffb115; /* Changed to blue */
-    text-decoration: none;
-    font-weight: 600;
-    padding: 8px 12px;
-    border-radius: 25px;
-    transition: color 0.3s ease, background-color 0.3s ease;
-}
-
-.toolbar .user-info .register-link:hover {
-    color: white;
-    background-color: #ffb115; /* Blue background on hover */
-}
-.navbar {
-    background-color: #ff3b93;
-    color: white;
-    padding: 15px;
-    margin-top: 10px;
-    margin-left: 70px;
-    margin-right: 70px;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center; /* Center the navbar items */
-    align-items: center;
-    gap: 15px; /* Space between items */
-    /* justify-content: space-around; */
-}
 
 .navLinks {
     display: flex;
@@ -285,7 +105,6 @@ body {
 
 
 .navbar a {
-    /* background-color: #007BFF; Changed to blue */
     color: white;
     padding: 8px 18px;
     border: none;
@@ -297,23 +116,19 @@ body {
 }
 
 .navbar a:hover {
-    background-color: #ffb115; /* Darker blue on hover */
+    background-color: #ffb115; 
     scale: 1.05;
     transition: all 0.3s;
     cursor: grab;
 }   
 
 
-.header {
-    background: #e71fd2;
-    padding: 20px;
-    text-align: center;
-}
+
 .logo-guess {
 color: #fafaf5; 
 }
 .logo {
-font-family: 'Poppins', sans-serif; /* or any modern font you prefer */
+font-family: sans-serif; 
 font-size: 3rem;
 font-weight: bold;
 text-decoration: none;
@@ -395,7 +210,7 @@ transform: rotateX(360deg);
 
 .rules-container h3 {
     color: #fffaef;
-    font-size: 1.5em;/* Removes default padding */
+    font-size: 1.5em;
 }
 
 .rules-image {
@@ -429,19 +244,19 @@ transform: rotateX(360deg);
 
 .score-container h3 {
     color: #fffaef;
-    font-size: 1.5em;/* Removes default padding */
+    font-size: 1.5em;
 }
 
 .score-image img {
-    float: right; /* Aligns image to the left */
+    float: right; 
     margin-right: -100px;
-    margin-left: 50px; /* Adds space between text and image */ 
+    margin-left: 50px; 
     margin-bottom: 100px;
     margin-top: s0px;
-    width: 75%; /* Makes the image responsive */
+    width: 75%; 
     max-width: 75%;
     height: auto;
-    border-radius: 15px; /* Adds rounded corners to the image */
+    border-radius: 15px; 
 }
 
 .footer {
@@ -490,8 +305,8 @@ align-items: center;
 text-align: center;
 color: rgb(245, 245, 242);
 padding: 20px;
-position: relative; /* <-- Important! */
-overflow: hidden;   /* <-- Prevent extra scroll */
+position: relative; 
+overflow: hidden;   
 }
 
 .hero::after {
@@ -507,7 +322,7 @@ z-index: 1;
 
 .hero-content {
 position: relative; 
-z-index: 2; /* <-- Above the black overlay */
+z-index: 2; 
 max-width: 700px;
 }
 
@@ -528,7 +343,6 @@ background-color: rgba(0, 0, 0, 0.5);
     font-size: 58px;
     margin-bottom: 20PX;
     font-weight: 800;
-    /* text-shadow: black; */
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
     color: white;
   }
