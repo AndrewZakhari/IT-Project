@@ -4,14 +4,17 @@
         <meta charset="UTF-8" content="width=device-width, initial-scale=1.0" name="viewport">
         <title>Share with us!</title>
         <link rel="stylesheet" href="sharewithus.css">
-    </head>
-    <body>
-      <header>
+         <script >
+      function toggleMenu() {
+        document.querySelector(".navLinks").classList.toggle("hidden");
+        document.querySelector(".navLinks").classList.toggle("navAnimation");
+      }
+     </script>
+ </head>
+ 
+ <body>
+     <header>
         <div class="toolbar">
-            <!-- <div class="search-bar">
-                <input type="text" placeholder="Tell your fitness goals...">
-                <button type="submit">Search</button>
-            </div> -->
             <a href="/" class="logo">
    <span class="logo-guess">Guess</span>
    <span class="logo-who">
@@ -25,14 +28,22 @@
         </div>
 
         <nav class="navbar">
-            <ul>
+          <div class="menu" onclick="toggleMenu()">
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+            <ul class="navLinks hidden">
                 <li><a href="/">Home</a></li>
                 <li><a href="/tutorial.html">Tutorial</a></li>
-                <li><a href="/about_us.html">About US</a></li>
+                <li><a href="/about_us.html">About</a></li>
                 <li><a href="/sharewithus.html">Contact</a></li>
             </ul>
     </nav>
     </header>
+    <div class="wrapper">
       <h1 id="header">
     Share your experience!
     </h1>
@@ -100,4 +111,5 @@
             }
           });
         </script>
+        </div>
 </body>

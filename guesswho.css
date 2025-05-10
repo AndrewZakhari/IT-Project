@@ -177,16 +177,16 @@
     align-items: center;
 }
 
+
 .toolbar .user-info {
     display: flex;
     align-items: right;
     gap: 15px;
     background-color: transparent;
     padding: 0;
-    margin: 0;
     flex-direction: row;
     justify-content: right;
-    margin-left: 1200px;
+
 }
 
 .toolbar .user-info .login-button {
@@ -235,14 +235,7 @@
     /* justify-content: space-around; */
 }
 
-.navbar ul {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    gap: 15px;
-    justify-content: center;
-}
+
 
 
 .navbar a {
@@ -315,3 +308,238 @@ transform: rotateX(360deg);
 transform: rotateX(360deg);
 }} 
 
+.navLinks {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    gap: 15px;
+    justify-content: center;
+}
+
+
+.navbar a {
+    /* background-color: #007BFF; Changed to blue */
+    color: white;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 25px;    
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #ffb115; /* Darker blue on hover */
+    scale: 1.05;
+    transition: all 0.3s;
+    cursor: grab;
+}   
+
+
+.logo-guess {
+color: #fafaf5; 
+}
+.logo {
+font-family: 'Poppins', sans-serif; /* or any modern font you prefer */
+font-size: 3rem;
+font-weight: bold;
+text-decoration: none;
+display: inline-block;
+animation: pulseScale 5s infinite;
+margin-left: 50px;
+}
+
+.logo-who {
+display: inline-block;
+animation: flipY 6s infinite;
+width: min-content;
+}
+
+.logo-who .w {
+color: #ffb115;
+}
+
+.logo-who .h {
+color: #4192c9;
+}
+
+.logo-who .o {
+color: #59dbec;
+}
+
+.logo-who .question {
+color: #F72585;
+}
+@keyframes flipY {
+0% {
+transform: rotateX(0deg);
+}
+16.67% {
+transform: rotateX(360deg);
+}
+100% {
+transform: rotateX(360deg);
+}}
+
+
+
+.hamburger{
+  width: 30px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+}
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.hamburger span {
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+  header {
+    z-index: 10;
+    width: 100%;
+    position: fixed;
+}
+.menu{
+  display:none;
+}
+
+.toolbar {
+    
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    margin-inline: 70px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.toolbar .user-info .login-button {
+    background-color: #ffb115; /* Changed to blue */
+    color: white;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 25px;    
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.toolbar .user-info .login-button:hover {
+    background-color: #ffb115; /* Darker blue on hover */
+    scale: 1.05;
+    transition: all 0.3s;
+}
+
+.toolbar .user-info .register-link {
+    color: #ffb115; /* Changed to blue */
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 25px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.toolbar .user-info .register-link:hover {
+    color: white;
+    background-color: #ffb115; /* Blue background on hover */
+}
+.navbar {
+    background-color: #ff3b93;
+    color: white;
+    padding: 15px;
+    margin-top: 10px;
+    margin-left: 70px;
+    margin-right: 70px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 15px; 
+}
+.navAnimation{
+  transition: all;
+  animation-name: navbarAnimation;
+  animation-duration: 0.5s;
+}
+
+@keyframes navbarAnimation {
+  0%{
+    width: 0;
+  } 
+  100%{
+    width: 75vw;
+  }
+}
+
+    @media only screen and (max-width: 600px) {
+        .loginCard {
+            position: absolute;
+            bottom: 10;
+            margin-inline: 10px;
+            width: 75%;
+        }
+  .menu{
+    display:block;
+  }
+  header{
+    margin-top: 10px;
+  }
+  .navbar{
+    margin: 0;
+    margin-top: 2.5vh;
+    justify-content: space-around;
+    width: max-content;
+    margin-inline: 10px;
+  } 
+  .navLinks{
+    width: 75vw;
+  }
+  .hidden{
+    display:none;
+  } 
+  .navLinks a {
+    padding-inline: 0;;
+  }
+  .logo{
+    left: 0;
+    position: absolute;
+    margin: 0;
+    font-size: 2rem;
+  }
+  .user-info{
+    position: absolute;
+    right: 0;
+    font-size: 0.rem;
+    margin: 0;
+  }
+  .loginCard{
+    margin-top: 15vh;
+  }
+  .container{
+    width: 70vw;
+    max-width: 100vw; 
+  }
+
+    }

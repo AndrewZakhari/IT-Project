@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="./login.css" />
-</head>
-<body>
+    <link rel="stylesheet" href="./login.css" /> 
+        <script >
+      function toggleMenu() {
+        document.querySelector(".navLinks").classList.toggle("hidden");
+        document.querySelector(".navLinks").classList.toggle("navAnimation");
+      }
+     </script>
+ </head>
+ 
+ <body>
+   <!-- Navigation Bar -->
      <header>
         <div class="toolbar">
             <a href="/" class="logo">
@@ -21,10 +29,17 @@
         </div>
 
         <nav class="navbar">
-            <ul>
+          <div class="menu" onclick="toggleMenu()">
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+            <ul class="navLinks hidden">
                 <li><a href="/">Home</a></li>
                 <li><a href="/tutorial.html">Tutorial</a></li>
-                <li><a href="/about_us.html">About US</a></li>
+                <li><a href="/about_us.html">About</a></li>
                 <li><a href="/sharewithus.html">Contact</a></li>
             </ul>
     </nav>

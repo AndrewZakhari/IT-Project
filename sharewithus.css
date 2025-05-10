@@ -1,3 +1,6 @@
+html{
+    min-height: 100%;
+}
 @font-face {
     font-family: 'Genshin Impact';
     src: url('fonts/Genshin-Impact-Font/zh-cn.ttf') format('truetype');
@@ -16,6 +19,188 @@ h1 {
     text-align:center;
     margin-top: 3rem;
 
+}
+  header {
+    z-index: 10;
+    width: 100%;
+    position: fixed;
+}
+.menu{
+  display:none;
+}
+
+.toolbar {
+    
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    margin-inline: 70px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-info {
+    display: flex;
+    align-items: right;
+    gap: 15px;
+    background-color: transparent;
+    padding: 0;
+    flex-direction: row;
+    justify-content: right;
+
+}
+
+.login-button {
+    background-color: #ffb115; /* Changed to blue */
+    color: white;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 25px;    
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.toolbar .user-info .login-button:hover {
+    background-color: #ffb115; /* Darker blue on hover */
+    scale: 1.05;
+    transition: all 0.3s;
+}
+
+.toolbar .user-info .register-link {
+    color: #ffb115; /* Changed to blue */
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 25px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.toolbar .user-info .register-link:hover {
+    color: white;
+    background-color: #ffb115; /* Blue background on hover */
+}
+.navbar {
+    background-color: #ff3b93;
+    color: white;
+    padding: 15px;
+    margin-top: 10px;
+    margin-left: 70px;
+    margin-right: 70px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center; /* Center the navbar items */
+    align-items: center;
+    gap: 15px; /* Space between items */
+    /* justify-content: space-around; */
+    
+}
+
+.navLinks {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    gap: 15px;
+    justify-content: center;
+}
+
+
+.navbar a {
+    /* background-color: #007BFF; Changed to blue */
+    color: white;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 25px;    
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #ffb115; /* Darker blue on hover */
+    scale: 1.05;
+    transition: all 0.3s;
+    cursor: grab;
+}   
+
+
+.logo-guess {
+color: #fafaf5; 
+}
+.logo {
+font-family: 'Poppins', sans-serif; /* or any modern font you prefer */
+font-size: 2rem;
+font-weight: bold;
+text-decoration: none;
+display: inline-block;
+animation: pulseScale 5s infinite;
+margin-left: 50px;
+}
+
+.logo-who {
+display: inline-block;
+animation: flipY 6s infinite;
+width: min-content;
+}
+
+.logo-who .w {
+color: #ffb115;
+}
+
+.logo-who .h {
+color: #4192c9;
+}
+
+.logo-who .o {
+color: #59dbec;
+}
+
+.logo-who .question {
+color: #F72585;
+}
+@keyframes flipY {
+0% {
+transform: rotateX(0deg);
+}
+16.67% {
+transform: rotateX(360deg);
+}
+100% {
+transform: rotateX(360deg);
+}}
+
+
+
+.hamburger{
+  width: 30px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+}
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.hamburger span {
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+  transition: 0.3s;
 }
 
 .icons {
@@ -38,6 +223,10 @@ h1 {
   }
   #mail{
     margin-right:3rem;
+  }
+
+  h1{
+    padding-top: 25vh;
   }
  
 .dis{
@@ -109,7 +298,7 @@ input, textarea{
 }
 .logo {
 font-family: 'Poppins', sans-serif; /* or any modern font you prefer */
-font-size: 2.5rem;
+font-size: 3rem;
 font-weight: bold;
 text-decoration: none;
 display: inline-block;
@@ -295,7 +484,8 @@ figure{
     /* justify-content: space-around; */
 }
 
-.navbar ul {
+
+.navLinks {
     display: flex;
     padding: 0;
     margin: 0;
@@ -360,4 +550,72 @@ fieldset{
     display: flex;
     width: 100%;
 
+}
+.logo2{
+    color: #411255;
+}
+.navAnimation{
+  transition: all;
+  animation-name: navbarAnimation;
+  animation-duration: 0.5s;
+}
+@keyframes navbarAnimation {
+  0%{
+    width: 0;
+  } 
+  100%{
+    width: 75vw;
+  }
+}
+@media only screen and ( max-width: 600px) {
+    html{
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .toolbar{
+        width: 100%;
+        margin-top: 10px;
+    }
+  .menu{
+    display:block;
+  }
+  .navbar{
+    margin: 0;
+    margin-top: 2.5vh;
+    justify-content: space-around;
+    width: max-content;
+    margin-inline: 10px;
+  } 
+  .navLinks{
+    width: 75vw;
+  }
+  .hidden{
+    display:none;
+  } 
+  .navLinks a {
+    padding-inline: 0;;
+  }
+  .logo{
+    left: 0;
+    position: absolute;
+    margin: 0;
+    font-size: 1.6rem;
+  }
+  .user-info{
+    margin-left: 0;
+    position: absolute;
+    right: 20;
+
+  }
+  h1{
+    padding-top:25vh;
+  }
+  article{
+    display:flex;
+    flex-direction: column;
+  }
+  form{
+    width: 95vw;
+  }
 }

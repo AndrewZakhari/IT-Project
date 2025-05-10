@@ -5,17 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tutorial | Guess who?</title>
     <link rel="stylesheet" href="tutorial.css">
-    <script >
-      function toggleMenu() {
-        document.querySelector(".navLinks").classList.toggle("hidden");
-        document.querySelector(".navLinks").classList.toggle("navAnimation");
-      }
-     </script>
- </head>
- 
- <body>
-     <header>
-        <div class="toolbar">      
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="toolbar">
+            <!-- <div class="search-bar">
+                <input type="text" placeholder="Tell your fitness goals...">
+                <button type="submit">Search</button>
+            </div> -->
             <a href="/" class="logo">
    <span class="logo-guess">Guess</span>
    <span class="logo-who">
@@ -29,21 +27,14 @@
         </div>
 
         <nav class="navbar">
-          <div class="menu" onclick="toggleMenu()">
-    <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-</div>
-            <ul class="navLinks hidden">
+            <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/tutorial.html">Tutorial</a></li>
-                <li><a href="/about_us.html">About</a></li>
+                <li><a href="/about_us.html">About US</a></li>
                 <li><a href="/sharewithus.html">Contact</a></li>
             </ul>
     </nav>
-    </header>
+    </header> 
 
     <section class="intro">
         <div class="intro-content">
@@ -55,14 +46,14 @@
     <section class="rules" id="rules">
         <div class="rules-container">
             
-            <div class="rules-content">
+            <!-- <h2 class="section-title">Step 1 </h2> -->
+            <!-- <div class="rules-content"> -->
                 <div class="rules-image">
                     <img src="images/friends.avif" alt="Friends having fun">
                 </div>
-            </div>
-            <div class="wrapper">
-                 <div class="rules-text">
-                <h1>⚖️ Our rules</h1>
+            <!-- </div> -->
+        <div class="rules-text">
+                <h3>⚖️ Our rules</h3>
                 <p>🧑‍🤝‍🧑 Add up to 10 players by entering their names.</p>
                 <p>▶ Hit "Start Game" to begin the fun!</p>
                 <p>❓ Hypothetical questions will appear — players answer privately.</p>
@@ -72,7 +63,13 @@
 
                 
         </div>
-            <div class="score-text">
+        </div>
+    </section>
+
+    <section class="score" id="score">
+        <div class="score-container">
+            <!-- <div class="score-content"> -->
+                <div class="score-text">
                     
                     <h3> 🧠 Scoring System...</h3>
                     <p>✅ Correct Guess = +10 Points</p>
@@ -81,12 +78,14 @@
                     <p>💾 Logged in? Your score will be saved to your account!</p>
                    
                 </div>
-       
-    </div>
+                <div class="score-image">
+                    <img src="images/Point System.png" alt="Scoring System">
+                </div>
+                
+                
+            <!-- </div> -->
         </div>
     </section>
-
-    
 
     <!-- Footer -->
     <div class="footer">

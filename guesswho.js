@@ -208,10 +208,10 @@ function displayScores() {
             const li = document.createElement('li');
             if (guess === realPlayer) {
                 li.innerText = `✅ "${answerList[idx].answer}" was correctly guessed as ${realPlayer}`;
-                li.style.color = 'green';
+                li.style.color = 'white';
             } else {
                 li.innerText = `❌ "${answerList[idx].answer}" was by ${realPlayer}, you guessed ${guess}`;
-                li.style.color = 'red';
+                li.style.color = 'white';
             }
             guessesList.appendChild(li);
         });
