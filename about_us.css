@@ -18,11 +18,14 @@ body {
     aspect-ratio: 7/4;
 }
 
+header{
+  position: fixed;
+}
+
 
 .toolbar {    
     color: white;
     padding: 10px;
-    margin-top: 10px;
     margin-inline: 70px;
     border-radius: 15px;
     display: flex;
@@ -39,7 +42,7 @@ body {
     margin: 0;
     flex-direction: row;
     justify-content: right;
-    margin-left: 1200px;
+    margin-left: 1200px
 }
 
 .toolbar .user-info .login-button {
@@ -111,7 +114,9 @@ color: #fafaf5;
 }
 .logo {
 font-family: sans-serif; 
-font-size: 3rem;
+font-size: 2.8rem;
+height: 71px;
+width: max-content;
 font-weight: bold;
 text-decoration: none;
 display: inline-block;
@@ -155,7 +160,7 @@ transform: rotateX(360deg);
 
     color: #fffaef;
     font-size: 3rem;
-    margin-top: 20px;
+    padding-top: 30vh;
     text-align: center;
     font-weight: bold;
 }
@@ -309,7 +314,7 @@ transform: rotateX(360deg);
     display:block;
   }
   header{
-    margin-top: 10px;
+    width: 100%;
   }
   .navbar{
     margin: 0;

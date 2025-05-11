@@ -5,6 +5,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
   header {
     z-index: 10;
     width: 100%;
@@ -177,7 +178,7 @@ transform: rotateX(360deg);
 
     color: #fffaef;
     font-size: 3rem;
-    padding-top: 20vh;
+    padding-top: 30vh;
     text-align: center;
     font-weight: bold;
 }
@@ -263,8 +264,7 @@ transform: rotateX(360deg);
     background: #a210ff;
     color: #FFFAEF;
     text-align: center;
-    padding: 10px;
-    margin-top: 1000px;
+    padding: 10px; 
     margin-left: 75px;
     margin-right: 75px;
     margin-bottom: 30px;
@@ -400,8 +400,8 @@ margin-left: 0;
   }
 }
 @media only screen and ( max-width: 600px) {
-    .intro{
-        padding-top: 10vh;
+    .intro h1{
+        padding-top: 20vh;
     }
   .menu{
     display:block;

@@ -199,6 +199,7 @@ transform: rotateX(360deg);
 
 .wrapper{
     width: 100%;
+    padding-top: 20vh;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -234,6 +235,7 @@ transform: rotateX(360deg);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: white;
+  margin-bottom: 10vh;
     }
 
 .input{
@@ -381,6 +383,10 @@ transform: rotateX(360deg);
   }
   .loginCard{
     margin-top: 15vh;
+  }
+  .wrapper{
+    padding-top: 0vh;
+
   }
 
 
